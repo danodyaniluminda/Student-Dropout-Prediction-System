@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Factor Inputs</title>
+</head>
+<body>
+    <h1>Risk Factor Inputs</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br>
+
+        <label for="family_history">Family History:</label>
+        <select name="family_history" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="medical_history">Medical History:</label>
+        <select name="medical_history" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="visual_symptoms">Visual Symptoms:</label>
+        <select name="visual_symptoms" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="nausea">Nausea:</label>
+        <select name="nausea" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="redness_eye">Redness in the Eye:</label>
+        <select name="redness_eye" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="eye_pain">Eye Pain:</label>
+        <select name="eye_pain" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="tunnel_vision">Tunnel Vision:</label>
+        <select name="tunnel_vision" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="halos_lights">Halos around Lights:</label>
+        <select name="halos_lights" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="blurred_vision">Blurred Vision:</label>
+        <select name="blurred_vision" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <label for="vomiting">Vomiting:</label>
+        <select name="vomiting" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
